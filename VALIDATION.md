@@ -12,3 +12,7 @@ This checks the private documentation/demo package, not a new live NAS deploymen
 - Numbered screenshot layouts were rendered in a browser; actual-app captures and simulations are labelled separately.
 
 Not retested here: fresh production installations, physical HA devices, CAD-kernel output, printers, real phone gestures, or current NAS production services. Module-only source packages can depend on the shared Projects Host implementation. See the manual's boundaries and release checklist before public sharing.
+
+Credential scan: Gitleaks scanned all 17 packages (54 MB) with zero findings. The only exclusions were verified checksum manifests and a public Cloudflare audience identifier.
+
+Browser checks used a local HTTP preview. Direct file:// navigation is blocked by the browser automation policy, so double-click launching was not automated. The file contains all resources and needs no network service.
