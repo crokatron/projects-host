@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Container version="2">
+  <Name>mungoon-stl-converter</Name>
+  <Repository>mungoon-stl-converter:1</Repository>
+  <Registry />
+  <Network>mungoon-project-runtime</Network>
+  <Privileged>false</Privileged>
+  <Overview>NAS STL to solid engine. Private worker; upload through the authenticated project website.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>https://projects.mungoon.net/stl-converter/</WebUI>
+  <Icon>http://192.168.0.54:9070/brand.png</Icon>
+  <ExtraParams>--restart unless-stopped --user 99:100 --cap-drop ALL --security-opt no-new-privileges --pids-limit 192 --memory 3g --cpus 2 --log-opt max-size=10m --log-opt max-file=2</ExtraParams>
+  <PostArgs />
+</Container>

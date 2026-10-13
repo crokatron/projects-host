@@ -1,0 +1,39 @@
+[
+  {
+    "boxes": [
+      {
+        "h": 59.1875,
+        "selector": "#copy",
+        "text": "Prepare a change without replacing the saved live design.",
+        "title": "Create a separate work copy",
+        "w": 260,
+        "x": 318,
+        "y": 568.890625
+      },
+      {
+        "h": 59.1875,
+        "selector": "#publish",
+        "text": "The simulated publish refuses an unreviewed change.",
+        "title": "Review before publishing",
+        "w": 260,
+        "x": 318,
+        "y": 674.078125
+      },
+      {
+        "h": 451.75,
+        "selector": "#result",
+        "text": "The dummy release changes while the example saved plan remains intact.",
+        "title": "Check what was preserved",
+        "w": 517.078125,
+        "x": 1228.90625,
+        "y": 392.703125
+      }
+    ],
+    "height": 1408,
+    "width": 2055,
+    "key": "simulation",
+    "title": "Try the working offline example",
+    "caption": "Screenshot of this project’s interactive demo. Side-by-side services are explicitly simulated.",
+    "cropHeight": 885.453125
+  }
+]

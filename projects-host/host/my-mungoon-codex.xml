@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Container version="2">
+  <Name>mungoon-codex</Name>
+  <Repository>mungoon-codex:1</Repository>
+  <Registry />
+  <Network>mungoon-project-runtime</Network>
+  <Privileged>false</Privileged>
+  <Overview>Owner-only NAS Codex Project Studio. Private worker; use the Project Studio website.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>https://projects.mungoon.net/studio.html</WebUI>
+  <Icon>http://192.168.0.54:9070/brand.png</Icon>
+  <ExtraParams>--restart unless-stopped --init --user 99:100 --cap-drop ALL --security-opt no-new-privileges --security-opt seccomp=/mnt/user/appdata/mungoon-codex/seccomp-codex.json --pids-limit 256 --memory 3g --cpus 2 --read-only --tmpfs /tmp:rw,nosuid,size=512m --log-opt max-size=10m --log-opt max-file=2</ExtraParams>
+  <PostArgs />
+  <Config Name="Codex private state" Target="/state" Default="/mnt/user/appdata/mungoon-codex/state" Mode="rw" Description="Codex private state" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mungoon-codex/state</Config>
+  <Config Name="Project work copies" Target="/workspaces" Default="/mnt/user/appdata/mungoon-projects/data/studio-workspaces" Mode="rw" Description="Project work copies" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/mungoon-projects/data/studio-workspaces</Config>
+</Container>

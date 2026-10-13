@@ -1,0 +1,77 @@
+{
+  "slug": "projects-host",
+  "title": "Projects Host & Project Studio",
+  "summary": "The shared NAS platform that serves the tools, checks access, preserves saved drafts and publishes reviewed releases. Project Studio provides a workflow for creating a work copy, requesting a change and reviewing it before publishing. Access Manager controls which projects a person can open; source backup, publishing and saved-data backup are separate operations.",
+  "features": [
+    [
+      "Project library",
+      "Search/filter tools, read previews and open dedicated project pages.",
+      "NAS platform"
+    ],
+    [
+      "Access Manager",
+      "Owner-managed per-project grants behind authenticated sign-in.",
+      "NAS platform"
+    ],
+    [
+      "Project Studio",
+      "Create a separate work copy, request changes and review before publishing.",
+      "NAS platform"
+    ],
+    [
+      "Saved drafts",
+      "Persist shared app designs on the NAS independently of the Windows PC.",
+      "NAS platform"
+    ],
+    [
+      "Release workflow",
+      "Curate files, validate, sign, deploy and verify a release with rollback on failed startup.",
+      "NAS platform"
+    ],
+    [
+      "History and restores",
+      "Owner-only version history and deliberate restoration workflow.",
+      "NAS platform"
+    ],
+    [
+      "App services",
+      "Gateway routes to HA, CAD, plant, QR backup and other protected services.",
+      "NAS platform"
+    ]
+  ],
+  "workflows": [
+    [
+      "Find and open a tool",
+      [
+        "Use search or category filters in the project library. Open Preview to see what a tool does; Open tool goes to the actual application.",
+        "Only projects granted to the signed-in account are shown. An owner-only tool is not shared by simply copying its URL.",
+        "Use the project’s own save status and export options; the library overview itself does not save its designs."
+      ]
+    ],
+    [
+      "Review a change in Project Studio",
+      [
+        "Choose the intended project and create a work copy. Describe the change with a concrete example of the desired behaviour.",
+        "Inspect the changed files and test the affected workflow in that work copy. Keep unrelated tools and live saved data outside the change.",
+        "Publish only after review/checks finish, then verify the actual hosted version and essential actions. A successful local edit is not a live deployment."
+      ]
+    ],
+    [
+      "Grant access deliberately",
+      [
+        "Open Access Manager as the owner, enter the intended person’s email and choose only the requested projects.",
+        "Save the grants and share the normal sign-in link. Confirm access as appropriate without weakening the server checks.",
+        "Revoke unwanted grants through the same owner workflow. LAN access is not an exception to authentication and authorisation."
+      ]
+    ],
+    [
+      "Handle an update or restore",
+      [
+        "Before editing a shared saved design, read its live API version/ETag and preserve newer changes. Do not restore a source seed over a live draft.",
+        "For application updates, use the signed release workflow and inspect verification output. Keep deployment keys out of Git.",
+        "Use version restore as an explicit owner operation after identifying the target version. Back up live data separately; a Git commit is not a copy of the database or uploads."
+      ]
+    ]
+  ],
+  "limits": "This is installation-specific infrastructure and remains private. A portable public edition needs a configuration/authentication guide and clean deployment testing. The demo changes only mock permissions, work copies and release state."
+}
