@@ -12,4 +12,4 @@ Shared authenticated gateway, project library, owner access controls, Studio wor
 
 **Next maintainer action:** Inventory missing shared modules and deployment prerequisites before a portable installer. Exercise authorization, ETag conflicts, signed publishing and rollback on an isolated installation. Never bypass LAN authentication or replace live drafts with source seeds.
 
-**Status:** private upload verified on 14 October 2026. These guides accompany the private source package. Live runtime, data backups and full recovery were not retested. Public release needs separate approval.
+**Status:** private upload verified on 14 October 2026. These guides accompany the source package. Live runtime, data backups and full recovery were not retested. Public sharing was authorised on 14 October 2026; the NAS backup remains private.
