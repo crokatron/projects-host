@@ -1,5 +1,7 @@
 # Projects Host & Project Studio
 
+**Maintaining this project? [Start here](docs/START-HERE.md) · [Detailed handover](docs/HANDOVER.md)**
+
 The shared NAS platform that serves the tools, checks access, preserves saved drafts and publishes reviewed releases. Project Studio provides a workflow for creating a work copy, requesting a change and reviewing it before publishing. Access Manager controls which projects a person can open; source backup, publishing and saved-data backup are separate operations.
 
 **Private preview · not published.**
